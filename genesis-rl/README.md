@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ## How to train ?
-3. Run following command from this directory.
+3. Run following command in your terminal from this directory.
 ```
 ./mevius_train.py
 ```
@@ -25,7 +25,7 @@ You can designate parameters from `get_train_cfg()` and `get_cfg()` in `mevius_t
 
 
 ## How to evaluate ?
-4. Run following command from this directory. Before your own training, the pretrained model will run.
+4. Run following command in your teminal from this directory. Before your own training, the pretrained model will run.
 ```
 # Forward 0.3m/s
 ./mevius_eval.py --cmd_x 0.3 --ckpt 200
@@ -38,6 +38,13 @@ You can designate parameters from `get_train_cfg()` and `get_cfg()` in `mevius_t
 ```
 You can choose`--ckpt n`. Available `n` is listed like ./logs/mevius-walking/model_{n}.pt.
 You can abort training, but if you abort it, `n` is limited. Default n is 999, so in that case, designation of skpt is mandatory.
+
+
+## Check from Tensor board.
+5. Run following command in your terminal from this direcotry.
+```
+tensorboard --logdir=logs/mevius-walking/
+```
 
 ## Citation:
 @inproceedings{kawaharazuka2024mevius,

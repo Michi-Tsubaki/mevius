@@ -1,27 +1,3 @@
-#!./venv/bin/python3
-"""
-## Description:
-This opensource project is originally prepared by Kento Kawaharazuka(JSK Robotics Lab, The University of Tokyo).
-Michitoshi Tsubaki (@Michi-Tsubaki) extended to support Genesis World Simulator referring to Genesis RL examples for Go2 Locomotion (https://github.com/Genesis-Embodied-AI/Genesis/tree/main/examples/locomotion).
-He also referred to https://qiita.com/tamashu/items/3591a76d61e97fb3e0dc. 
-
-## Citation:
-@inproceedings{kawaharazuka2024mevius,
-  author={K. Kawaharazuka and S. Inoue and T. Suzuki and S. Yuzaki and S. Sawaguchi and K. Okada and M. Inaba},
-  title={{MEVIUS: A Quadruped Robot Easily Constructed through E-Commerce with Sheet Metal Welding and Machining}},
-  booktitle={Proceedings of the 2024 IEEE-RAS International Conference on Humanoid Robots},
-  year=2024,
-}
-
-@misc{Genesis,
-  author = {Genesis Authors},
-  title = {Genesis: A Generative and Universal Physics Engine for Robotics and Beyond},
-  month = {December},
-  year = {2024},
-  url = {https://github.com/Genesis-Embodied-AI/Genesis}
-}
-"""
-
 import argparse
 import os
 import pickle
@@ -75,10 +51,10 @@ def get_train_cfg(exp_name, max_iterations):
             "load_run": -1,
             "log_interval": 1,
             "max_iterations": max_iterations,
-            "record_interval": -1,
+            "record_interval": 1,
             "resume": False,
             "resume_path": None,
-            "run_name": "",
+            "run_name": "tb",
         },
         "runner_class_name": "OnPolicyRunner",
         "num_steps_per_env": 24,
@@ -180,6 +156,7 @@ def main():
     if os.path.exists(log_dir):
         shutil.rmtree(log_dir)
     os.makedirs(log_dir, exist_ok=True)
+    os.makedirs(os.path.join(log_dir, "tb"), exist_ok=True)
 
     pickle.dump(
         [env_cfg, obs_cfg, reward_cfg, command_cfg, train_cfg],
