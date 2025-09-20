@@ -25,7 +25,7 @@ You can designate parameters from `get_train_cfg()` and `get_cfg()` in `mevius_t
 
 
 ## How to evaluate ?
-4. Run following command from this directory.
+4. Run following command from this directory. Before your own training, the pretrained model will run.
 ```
 # Forward 0.3m/s
 ./mevius_eval.py --cmd_x 0.3 --ckpt 200
@@ -35,9 +35,6 @@ You can designate parameters from `get_train_cfg()` and `get_cfg()` in `mevius_t
 
 # Forward 0.0m/s
 ./mevius_eval.py --cmd_x 0.0 --ckpt 200
-
-# Backward 0.2m/s
-./mevius_eval.py --cmd_x -0.2 --ckpt 200
 ```
 You can choose`--ckpt n`. Available `n` is listed like ./logs/mevius-walking/model_{n}.pt.
 You can abort training, but if you abort it, `n` is limited. Default n is 999, so in that case, designation of skpt is mandatory.
