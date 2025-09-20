@@ -4,6 +4,12 @@ Michitoshi Tsubaki (@Michi-Tsubaki) extended to support Genesis World Simulator 
 He also referred to https://qiita.com/tamashu/items/3591a76d61e97fb3e0dc. 
 
 ## Setup
+0. Clone this branch
+```
+git clone -b genesis-rl git@github.com:Michi-Tsubaki/mevius.git
+cd mevius/genesis-rl
+```
+
 1. Create vistural-env
 ```
 python3 -m venv venv
