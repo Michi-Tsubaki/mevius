@@ -38,6 +38,7 @@ You can designate parameters from `get_train_cfg()` and `get_cfg()` in `mevius_t
 ```
 You can choose`--ckpt n`. Available `n` is listed like ./logs/mevius-walking/model_{n}.pt.
 You can abort training, but if you abort it, `n` is limited. Default n is 999, so in that case, designation of skpt is mandatory.
+<img width="791" height="590" alt="Screenshot from 2025-09-20 22-39-46" src="https://github.com/user-attachments/assets/4e88c94e-93e4-4784-af85-c20c1436784c" />
 
 
 ## Check from Tensor board.
