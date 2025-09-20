@@ -45,6 +45,10 @@ You can abort training, but if you abort it, `n` is limited. Default n is 999, s
 ```
 tensorboard --logdir=logs/mevius-walking/
 ```
+<img width="732" height="418" alt="Screenshot from 2025-09-20 22-36-27" src="https://github.com/user-attachments/assets/db02a905-f2ab-4367-9526-7c8b9225ddab" />
+<img width="732" height="418" alt="Screenshot from 2025-09-20 22-36-59" src="https://github.com/user-attachments/assets/23bea234-df3d-4477-b301-2c651b0734c2" />
+<img width="732" height="418" alt="Screenshot from 2025-09-20 22-37-07" src="https://github.com/user-attachments/assets/df335c5d-4cbc-4b9a-83b7-3326f25b13cf" />
+
 
 ## Citation:
 @inproceedings{kawaharazuka2024mevius,
