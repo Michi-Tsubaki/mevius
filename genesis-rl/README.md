@@ -1,7 +1,9 @@
 # Mevius - Genesis Reinforcement Learning
-This opensource project is originally prepared by Kento Kawaharazuka(JSK Robotics Lab, The University of Tokyo).
-Michitoshi Tsubaki (@Michi-Tsubaki) extended to support Genesis World Simulator referring to Genesis RL examples for Go2 Locomotion (https://github.com/Genesis-Embodied-AI/Genesis/tree/main/examples/locomotion).
-He also referred to https://qiita.com/tamashu/items/3591a76d61e97fb3e0dc. 
+## What's this Project?
+Reinforcement Learning for Mevius(Opensource Quadrupedal Robot) using Genesis(OSS). This opensource project is originally prepared by Kento Kawaharazuka(JSK Robotics Lab, The University of Tokyo). Michitoshi Tsubaki (@Michi-Tsubaki) extended to support Genesis World Simulator referring to Genesis RL examples for Go2 Locomotion (https://github.com/Genesis-Embodied-AI/Genesis/tree/main/examples/locomotion). He also referred to https://qiita.com/tamashu/items/3591a76d61e97fb3e0dc. 
+
+https://github.com/user-attachments/assets/501bfb02-29ae-49a7-9e99-bb5c50b55148
+
 
 ## Setup
 0. Clone this branch
