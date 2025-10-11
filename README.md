@@ -1,3 +1,6 @@
+[Genesis]
+https://github.com/Michi-Tsubaki/mevius/tree/genesis-rl/genesis-rl
+
 # MEVIUS
 This repository includes the hardware and software components of "MEVIUS: A Quadruped Robot Easily Constructed through E-Commerce with Sheet Metal Welding and Machining."
 
